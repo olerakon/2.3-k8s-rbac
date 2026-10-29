@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-app-svc
+  labels:
+    app: web-app
+spec:
+  type: ClusterIP
+  externalIPs:
+    - 192.168.140.145
+  selector:
+    app: web-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-content
+  namespace: hw-k8s-rbac
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Page via ConfigMap</title>
+    </head>
+    <body>
+      <h1>Netology Homework k8s by K.M.</h1>
+      <p>This page generated via ConfigMap.</p>
+    </body>
+    </html>
